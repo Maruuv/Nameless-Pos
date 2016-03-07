@@ -21,6 +21,7 @@ public class Manguvaljak {
 	        System.out.println("Opponents side: ");
 	        for(Kaart vastaseValjak: hetkeVastane.getMangijaLaud()) {
 	            System.out.println(vastaseValjak + "\n");
+				vastaseValjak.setMoveCount(vastaseValjak.getMoveCount()+1);
 	        }
 	    }
 	    public static boolean kaartLauale(Kaart nimi, Mangija mangija) {
