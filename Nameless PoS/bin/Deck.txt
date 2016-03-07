@@ -1,2 +1,15 @@
 Hydra,Hero,5,3,4,-,Tank
 Dispel,Spell,"Dispel",6,Purge,0
+Poison,Spell,"Defence",5,Vulnerability,1
+Hydra,Hero,5,3,4,-,Tank
+Dispel,Spell,"Dispel",6,Purge,0
+Poison,Spell,"Defence",5,Vulnerability,1
+Hydra,Hero,5,3,4,-,Tank
+Dispel,Spell,"Dispel",6,Purge,0
+Poison,Spell,"Defence",5,Vulnerability,1
+Hydra,Hero,5,3,4,-,Tank
+Dispel,Spell,"Dispel",6,Purge,0
+Poison,Spell,"Defence",5,Vulnerability,1
+Hydra,Hero,5,3,4,-,Tank
+Dispel,Spell,"Dispel",6,Purge,0
+Poison,Spell,"Defence",5,Vulnerability,1
