@@ -79,6 +79,7 @@ public class Main {
                 Manguvaljak.hetkeMangija.setMangijaKasi(tempKasi);
             }
             Manguvaljak.uusKaik();
+            int attackCount = 0; //Nulli attackCount
             while(true) {
                 System.out.println("Sisesta tegevuse number, mida soovid teha:\n 1) Aseta hero valjakule\n 2) Kasuta spelli \n 3) Pane spell lauale \n 4) Attack! \n 5) Lõpeta käik\n");
                 int tegevus = Integer.parseInt(scan.next());
@@ -93,16 +94,27 @@ public class Main {
                     boolean onnestus = Manguvaljak.kaartLauale(Manguvaljak.hetkeMangija.getMangijaKasi().get(kaartToLaud),Manguvaljak.hetkeMangija);
                     if(onnestus){
                         System.out.println("Kaart asetatud.");
+                        for(Kaart kaart: Manguvaljak.hetkeMangija.getMangijaLaud()) {
+                            System.out.println(kaart);
+                        }
                     }
                     else {
                         System.out.println("Kaardi asetamine ebaonnestus!");
                     }
                 } else if (tegevus == 2) {
-                    //Teine
+                    System.out.println("Not yet implemented");
                 } else if (tegevus == 3) {
-                    //Kolmas
+                    System.out.println("Not yet implemented");
                 } else if (tegevus == 4) {
-                    //Neljas
+                    if(attackCount == 0) {
+                        boolean attackState = Manguvaljak.attack(Manguvaljak.hetkeMangija, Manguvaljak.hetkeVastane);
+                        if (attackState) {
+                            attackCount++;
+                        }
+                    }
+                    else{
+                        System.out.println("You can only attack once during a turn.");
+                    }
                 } else {
                     break;
                 }
