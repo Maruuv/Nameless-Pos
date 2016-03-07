@@ -90,10 +90,11 @@ public class Main {
                         System.out.println(indeks +") "+  kaart +"\n");
                         indeks++;
                     }
-                    int kaartToLaud = Integer.parseInt(scan.next());
+                    int kaartToLaud = Integer.parseInt(scan.next())-1;
                     boolean onnestus = Manguvaljak.kaartLauale(Manguvaljak.hetkeMangija.getMangijaKasi().get(kaartToLaud),Manguvaljak.hetkeMangija);
                     if(onnestus){
                         System.out.println("Kaart asetatud.");
+                        System.out.println("Manguvali:");
                         for(Kaart kaart: Manguvaljak.hetkeMangija.getMangijaLaud()) {
                             System.out.println(kaart);
                         }

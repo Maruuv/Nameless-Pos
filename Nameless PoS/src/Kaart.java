@@ -14,6 +14,7 @@ public class Kaart {
 	private int manaPoints; //Spell
 	private String effekt; //Spell
 	private int tugevus; //Spell
+	private int moveCount; //Kaikude counter
 
 	public Kaart(String nimi, int attack, int defence, int rank, String eriatribuut, String alamTyyp) {
 		this.nimi = nimi;
@@ -27,15 +28,19 @@ public class Kaart {
 		this.defenceBuff = 0;
 		this.attackVulnerability = 0;
 		this.defenceVulnerability = 0;
+		this.moveCount = 0;
 	}
-	
-	public Kaart(String nimi, String alamTyyp, int manaPoints, String effekt,int tugevus) {
+
+
+	public Kaart(String nimi, String alamTyyp, int manaPoints, String effekt, int tugevus) {
 		this.nimi = nimi;
 		this.tyyp = "Spell";
 		this.alamTyyp = alamTyyp;
 		this.manaPoints = manaPoints;
 		this.effekt = effekt;
 		this.tugevus = tugevus;
+
+		this.moveCount = 0;
 	}
 
 	public String getNimi() {
@@ -126,7 +131,12 @@ public class Kaart {
 	public int getTugevus() {
 		return tugevus;
 	}
-
+	public int getMoveCount() {
+		return moveCount;
+	}
+	public void setMoveCount(int moveCount) {
+		this.moveCount = moveCount;
+	}
 	public void setTugevus(int tugevus) {
 		this.tugevus = tugevus;
 	}

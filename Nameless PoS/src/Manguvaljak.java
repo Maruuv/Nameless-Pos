@@ -21,6 +21,7 @@ public class Manguvaljak {
 	        System.out.println("Opponents side: ");
 	        for(Kaart vastaseValjak: hetkeVastane.getMangijaLaud()) {
 	            System.out.println(vastaseValjak + "\n");
+				vastaseValjak.setMoveCount(vastaseValjak.getMoveCount()+1);
 	        }
 	    }
 	    public static boolean kaartLauale(Kaart nimi, Mangija mangija) {
@@ -117,7 +118,7 @@ public class Manguvaljak {
 		}
 		else if (heroArvVastasel == false) {
 			hetkeVastane.setElud(hetkeVastane.getElud() - mangijaHero.getAttack());
-			System.out.println("Rünnak õnnestus! Vastase elud:" + hetkeVastane.getElud());
+			System.out.println("Rï¿½nnak ï¿½nnestus! Vastase elud:" + hetkeVastane.getElud());
 			return true;
 		}
 		else {
